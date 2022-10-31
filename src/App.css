@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: rgb(240, 245, 252);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
+  margin:50px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
+.title-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-.App-link {
-  color: #61dafb;
 }
+.title{
+  font-size: 2em;
+}
+.underline{
+  height: 3px;
+  width: 50%;
+  background-color: rgb(185, 145, 82);
+}
+.navlink{
+ display: inline-block;
+ margin: 10px 15px;
+text-decoration: none;
+font-size: 1.5em;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.navlink.active{
+  color: aqua;
+  font-size: 2em;
+}
+.single-menu{
+  height: 500px;
+  width: 300px;
+  background-color: white;
+  box-shadow: 4px 4px 4px rgba(0,0,0,.4);
+  margin: 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:start ;
+  border-radius: 5px;
+}
+.menu-img{
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.menu-desc{
+  margin:auto
+}
+.all-menus{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.main-comp{
+  height:600px;
+  width:100%;
+ background-image: url('https://burst.shopifycdn.com/photos/flatlay-iron-skillet-with-meat-and-other-food.jpg?width=1200&format=pjpg&exif=1&iptc=1');
+ background-size: cover;
 }
